@@ -203,7 +203,31 @@ public class DoubleBoardPanel extends JPanel
         g.drawString("Lines", getWidth() - 200 + 20, 200 + 140);
         g.drawString(tetris2.getLinesForLevel() + " / " + tetris2.getLineGoal(), getWidth() - 200 + 20, 200 + 160);
         
-        g.drawString(tetris.getTime(), getWidth() - 200 + 20, 200 + 200);
+        g.drawString(tetris2.getTime(), getWidth() - 200 + 20, 200 + 200);
+        
+        if (tetris2.hasLostGame()) 
+        {
+            g.setColor(new Color(0x7FAFAFAF, true));
+            
+            g.fillRect(getWidth()/2, getHeight()/2 + 100, getWidth()/2, 100);
+            
+            g.setColor(new Color(0x000000));
+            
+            g.setFont(new Font("Tahoma", Font.PLAIN, 72));
+            g.drawString("Finished", 3*getWidth()/4 - 130, getHeight()/2 + 180);
+        }
+        
+        if (tetris.hasLostGame()) 
+        {
+            g.setColor(new Color(0x7FAFAFAF, true));
+            
+            g.fillRect(0, getHeight()/2 + 100, getWidth()/2, 100);
+            
+            g.setColor(new Color(0x000000));
+            
+            g.setFont(new Font("Tahoma", Font.PLAIN, 72));
+            g.drawString("Finished", getWidth()/4 - 130, getHeight()/2 + 180);
+        }
     }
     
     private Color getColor(int type) 

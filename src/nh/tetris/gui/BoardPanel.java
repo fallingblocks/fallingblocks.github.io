@@ -116,6 +116,18 @@ public class BoardPanel extends JPanel
         g.drawString(tetris.getLinesForLevel() + " / " + tetris.getLineGoal(), getWidth() - 200 + 20, 200 + 160);
         
         g.drawString(tetris.getTime(), getWidth() - 200 + 20, 200 + 200);
+        
+        if (tetris.hasLostGame()) 
+        {
+            g.setColor(new Color(0x7FAFAFAF, true));
+            
+            g.fillRect(0, getHeight()/2 + 100, getWidth(), 100);
+            
+            g.setColor(new Color(0x000000));
+            
+            g.setFont(new Font("Tahoma", Font.PLAIN, 72));
+            g.drawString("Finished", getWidth()/2 - 130, getHeight()/2 + 180);
+        }
     }
     
     private Color getColor(int type) 

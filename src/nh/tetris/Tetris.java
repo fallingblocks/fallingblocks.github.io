@@ -33,7 +33,7 @@ public class Tetris
     
     public String getTime() 
     {
-        int hundredths = timer%100;
+        int tenths = (timer/10)%10;
         
         int seconds = (timer/100) % 60;
         
@@ -41,7 +41,7 @@ public class Tetris
         
         int hours = (timer/100/60/60);
         
-        return String.format("%02d:%02d:%02d.%02d", hours, minutes, seconds, hundredths);
+        return String.format("%02d:%02d:%02d.%01d", hours, minutes, seconds, tenths);
     }
     
     public void reset() 
