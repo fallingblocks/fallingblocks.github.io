@@ -126,7 +126,7 @@ public class BoardPanel extends JPanel
             g.setColor(new Color(0x000000));
             
             g.setFont(new Font("Tahoma", Font.PLAIN, 72));
-            g.drawString("Finished", getWidth()/2 - 130, getHeight()/2 + 180);
+            g.drawString("Finished Game", getWidth()/2 - 235, getHeight()/2 + 180);
         }
     }
     

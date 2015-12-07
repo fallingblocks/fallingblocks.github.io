@@ -214,7 +214,7 @@ public class DoubleBoardPanel extends JPanel
             g.setColor(new Color(0x000000));
             
             g.setFont(new Font("Tahoma", Font.PLAIN, 72));
-            g.drawString("Finished", 3*getWidth()/4 - 130, getHeight()/2 + 180);
+            g.drawString("Finished Game", 3*getWidth()/4 - 235, getHeight()/2 + 180);
         }
         
         if (tetris.hasLostGame()) 
@@ -226,7 +226,7 @@ public class DoubleBoardPanel extends JPanel
             g.setColor(new Color(0x000000));
             
             g.setFont(new Font("Tahoma", Font.PLAIN, 72));
-            g.drawString("Finished", getWidth()/4 - 130, getHeight()/2 + 180);
+            g.drawString("Finished Game", getWidth()/4 - 235, getHeight()/2 + 180);
         }
     }
     
