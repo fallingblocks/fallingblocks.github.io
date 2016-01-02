@@ -1,0 +1,28 @@
+body {
+	background-color: #BEF;
+}
+
+h1 {
+	color: #111;
+	font-family: tahoma;
+	font-size: 150%;
+}
+
+p {
+	color: #333;
+	font-family: tahoma;
+	font-size: 120%;
+}
+
+a.username {
+	color: #2060D0;
+	text-decoration: none;
+}
+
+a {
+	color: #2060D0;
+}
+
+a:hover {
+	color: #6060B0;
+}
